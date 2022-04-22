@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>JINX VIDEO PLAYER</h1>
+    <div class="video-container">
+      <video class="video" src="sample.mp4"></video>
+      <div class="controls">
+        <div class="progress-box">
+          <div class="progress"></div>
+        </div>
+        <button class="play">▶</button>
+        <input
+          type="range"
+          class="volume"
+          name="volume"
+          min="0"
+          max="3"
+          value="1"
+          step="0.5"
+        />
+        <div class="videoTime">
+          <span class="currentTime">00:00</span> /
+          <span class="totalTime">00:00</span>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
